@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC11623B24DB95E30003A19E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11623A24DB95E30003A19E /* AppDelegate.swift */; };
+		BC11623D24DB95E30003A19E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11623C24DB95E30003A19E /* SceneDelegate.swift */; };
+		BC11623F24DB95E30003A19E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11623E24DB95E30003A19E /* ViewController.swift */; };
+		BC11624224DB95E30003A19E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC11624024DB95E30003A19E /* Main.storyboard */; };
+		BC11624424DB95E50003A19E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC11624324DB95E50003A19E /* Assets.xcassets */; };
+		BC11624724DB95E50003A19E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC11624524DB95E50003A19E /* LaunchScreen.storyboard */; };
+		BC11625224DB95E50003A19E /* ParqueaderoCeibaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11625124DB95E50003A19E /* ParqueaderoCeibaTests.swift */; };
+		BC11625D24DB95E50003A19E /* ParqueaderoCeibaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11625C24DB95E50003A19E /* ParqueaderoCeibaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC11624E24DB95E50003A19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC11622F24DB95E30003A19E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC11623624DB95E30003A19E;
+			remoteInfo = ParqueaderoCeiba;
+		};
+		BC11625924DB95E50003A19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC11622F24DB95E30003A19E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC11623624DB95E30003A19E;
+			remoteInfo = ParqueaderoCeiba;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC11623724DB95E30003A19E /* ParqueaderoCeiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParqueaderoCeiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC11623A24DB95E30003A19E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC11623C24DB95E30003A19E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC11623E24DB95E30003A19E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC11624124DB95E30003A19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC11624324DB95E50003A19E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC11624624DB95E50003A19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC11624824DB95E50003A19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC11624D24DB95E50003A19E /* ParqueaderoCeibaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParqueaderoCeibaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC11625124DB95E50003A19E /* ParqueaderoCeibaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParqueaderoCeibaTests.swift; sourceTree = "<group>"; };
+		BC11625324DB95E50003A19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC11625824DB95E50003A19E /* ParqueaderoCeibaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParqueaderoCeibaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC11625C24DB95E50003A19E /* ParqueaderoCeibaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParqueaderoCeibaUITests.swift; sourceTree = "<group>"; };
+		BC11625E24DB95E50003A19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC11623424DB95E30003A19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC11624A24DB95E50003A19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC11625524DB95E50003A19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC11622E24DB95E30003A19E = {
+			isa = PBXGroup;
+			children = (
+				BC11623924DB95E30003A19E /* ParqueaderoCeiba */,
+				BC11625024DB95E50003A19E /* ParqueaderoCeibaTests */,
+				BC11625B24DB95E50003A19E /* ParqueaderoCeibaUITests */,
+				BC11623824DB95E30003A19E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC11623824DB95E30003A19E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC11623724DB95E30003A19E /* ParqueaderoCeiba.app */,
+				BC11624D24DB95E50003A19E /* ParqueaderoCeibaTests.xctest */,
+				BC11625824DB95E50003A19E /* ParqueaderoCeibaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC11623924DB95E30003A19E /* ParqueaderoCeiba */ = {
+			isa = PBXGroup;
+			children = (
+				BC11623A24DB95E30003A19E /* AppDelegate.swift */,
+				BC11623C24DB95E30003A19E /* SceneDelegate.swift */,
+				BC11623E24DB95E30003A19E /* ViewController.swift */,
+				BC11624024DB95E30003A19E /* Main.storyboard */,
+				BC11624324DB95E50003A19E /* Assets.xcassets */,
+				BC11624524DB95E50003A19E /* LaunchScreen.storyboard */,
+				BC11624824DB95E50003A19E /* Info.plist */,
+			);
+			path = ParqueaderoCeiba;
+			sourceTree = "<group>";
+		};
+		BC11625024DB95E50003A19E /* ParqueaderoCeibaTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC11625124DB95E50003A19E /* ParqueaderoCeibaTests.swift */,
+				BC11625324DB95E50003A19E /* Info.plist */,
+			);
+			path = ParqueaderoCeibaTests;
+			sourceTree = "<group>";
+		};
+		BC11625B24DB95E50003A19E /* ParqueaderoCeibaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC11625C24DB95E50003A19E /* ParqueaderoCeibaUITests.swift */,
+				BC11625E24DB95E50003A19E /* Info.plist */,
+			);
+			path = ParqueaderoCeibaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC11623624DB95E30003A19E /* ParqueaderoCeiba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC11626124DB95E50003A19E /* Build configuration list for PBXNativeTarget "ParqueaderoCeiba" */;
+			buildPhases = (
+				BC11623324DB95E30003A19E /* Sources */,
+				BC11623424DB95E30003A19E /* Frameworks */,
+				BC11623524DB95E30003A19E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParqueaderoCeiba;
+			productName = ParqueaderoCeiba;
+			productReference = BC11623724DB95E30003A19E /* ParqueaderoCeiba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC11624C24DB95E50003A19E /* ParqueaderoCeibaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC11626424DB95E50003A19E /* Build configuration list for PBXNativeTarget "ParqueaderoCeibaTests" */;
+			buildPhases = (
+				BC11624924DB95E50003A19E /* Sources */,
+				BC11624A24DB95E50003A19E /* Frameworks */,
+				BC11624B24DB95E50003A19E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC11624F24DB95E50003A19E /* PBXTargetDependency */,
+			);
+			name = ParqueaderoCeibaTests;
+			productName = ParqueaderoCeibaTests;
+			productReference = BC11624D24DB95E50003A19E /* ParqueaderoCeibaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC11625724DB95E50003A19E /* ParqueaderoCeibaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC11626724DB95E50003A19E /* Build configuration list for PBXNativeTarget "ParqueaderoCeibaUITests" */;
+			buildPhases = (
+				BC11625424DB95E50003A19E /* Sources */,
+				BC11625524DB95E50003A19E /* Frameworks */,
+				BC11625624DB95E50003A19E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC11625A24DB95E50003A19E /* PBXTargetDependency */,
+			);
+			name = ParqueaderoCeibaUITests;
+			productName = ParqueaderoCeibaUITests;
+			productReference = BC11625824DB95E50003A19E /* ParqueaderoCeibaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC11622F24DB95E30003A19E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Brayam Alberto Mora Arias - Ceiba Software";
+				TargetAttributes = {
+					BC11623624DB95E30003A19E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					BC11624C24DB95E50003A19E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BC11623624DB95E30003A19E;
+					};
+					BC11625724DB95E50003A19E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = BC11623624DB95E30003A19E;
+					};
+				};
+			};
+			buildConfigurationList = BC11623224DB95E30003A19E /* Build configuration list for PBXProject "ParqueaderoCeiba" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC11622E24DB95E30003A19E;
+			productRefGroup = BC11623824DB95E30003A19E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC11623624DB95E30003A19E /* ParqueaderoCeiba */,
+				BC11624C24DB95E50003A19E /* ParqueaderoCeibaTests */,
+				BC11625724DB95E50003A19E /* ParqueaderoCeibaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC11623524DB95E30003A19E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC11624724DB95E50003A19E /* LaunchScreen.storyboard in Resources */,
+				BC11624424DB95E50003A19E /* Assets.xcassets in Resources */,
+				BC11624224DB95E30003A19E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC11624B24DB95E50003A19E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC11625624DB95E50003A19E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC11623324DB95E30003A19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC11623F24DB95E30003A19E /* ViewController.swift in Sources */,
+				BC11623B24DB95E30003A19E /* AppDelegate.swift in Sources */,
+				BC11623D24DB95E30003A19E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC11624924DB95E50003A19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC11625224DB95E50003A19E /* ParqueaderoCeibaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC11625424DB95E50003A19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC11625D24DB95E50003A19E /* ParqueaderoCeibaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC11624F24DB95E50003A19E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC11623624DB95E30003A19E /* ParqueaderoCeiba */;
+			targetProxy = BC11624E24DB95E50003A19E /* PBXContainerItemProxy */;
+		};
+		BC11625A24DB95E50003A19E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC11623624DB95E30003A19E /* ParqueaderoCeiba */;
+			targetProxy = BC11625924DB95E50003A19E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC11624024DB95E30003A19E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC11624124DB95E30003A19E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC11624524DB95E50003A19E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC11624624DB95E50003A19E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC11625F24DB95E50003A19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC11626024DB95E50003A19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC11626224DB95E50003A19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AU73NM66Z8;
+				INFOPLIST_FILE = ParqueaderoCeiba/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brayammora.ParqueaderoCeiba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC11626324DB95E50003A19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AU73NM66Z8;
+				INFOPLIST_FILE = ParqueaderoCeiba/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brayammora.ParqueaderoCeiba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC11626524DB95E50003A19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AU73NM66Z8;
+				INFOPLIST_FILE = ParqueaderoCeibaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brayammora.ParqueaderoCeibaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParqueaderoCeiba.app/ParqueaderoCeiba";
+			};
+			name = Debug;
+		};
+		BC11626624DB95E50003A19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AU73NM66Z8;
+				INFOPLIST_FILE = ParqueaderoCeibaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brayammora.ParqueaderoCeibaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParqueaderoCeiba.app/ParqueaderoCeiba";
+			};
+			name = Release;
+		};
+		BC11626824DB95E50003A19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AU73NM66Z8;
+				INFOPLIST_FILE = ParqueaderoCeibaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brayammora.ParqueaderoCeibaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParqueaderoCeiba;
+			};
+			name = Debug;
+		};
+		BC11626924DB95E50003A19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AU73NM66Z8;
+				INFOPLIST_FILE = ParqueaderoCeibaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = brayammora.ParqueaderoCeibaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParqueaderoCeiba;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC11623224DB95E30003A19E /* Build configuration list for PBXProject "ParqueaderoCeiba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC11625F24DB95E50003A19E /* Debug */,
+				BC11626024DB95E50003A19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC11626124DB95E50003A19E /* Build configuration list for PBXNativeTarget "ParqueaderoCeiba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC11626224DB95E50003A19E /* Debug */,
+				BC11626324DB95E50003A19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC11626424DB95E50003A19E /* Build configuration list for PBXNativeTarget "ParqueaderoCeibaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC11626524DB95E50003A19E /* Debug */,
+				BC11626624DB95E50003A19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC11626724DB95E50003A19E /* Build configuration list for PBXNativeTarget "ParqueaderoCeibaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC11626824DB95E50003A19E /* Debug */,
+				BC11626924DB95E50003A19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC11622F24DB95E30003A19E /* Project object */;
+}
