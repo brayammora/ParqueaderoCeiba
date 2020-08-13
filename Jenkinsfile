@@ -15,11 +15,12 @@ node('Slave4_Mac') {
         ])
     }
 
-    stage('Build/Test') {
+    stage('Build') {
 
         // Build and test project.
-        sh 'xcodebuild -scheme "ParqueaderoCeiba" -configuration "Debug" clean build test -destination "platform:iOS Simulator, OS:latest, name:iPhone 8"' 
-	      
+        // sh 'xcodebuild -scheme "ParqueaderoCeiba" -configuration "Debug" clean build test -destination "platform:iOS Simulator, OS:latest, name:iPhone 8"' 
+	// sh 'xcodebuild -scheme "ParqueaderoCeiba" -configuration "Debug" clean build test -destination "platform=iOS Simulator, name=iPhone 8 ,OS=latest" -enableCodeCoverage YES'  
+	sh 'xcodebuild -scheme "ParqueaderoCeiba" clean build CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO"'
     }
 
 }
