@@ -15,10 +15,11 @@ node('Slave4_Mac') {
         ])
     }
 
-    stage('Build') {
+    stage('Build/Test') {
 
-        // Build project.
-        sh 'xcodebuild -scheme "ParqueaderoCeiba" -configuration "Debug" build test -destination "platform:iOS Simulator, OS:latest, name:iPhone 8"'       
+        // Build and test project.
+        sh 'xcodebuild -scheme "ParqueaderoCeiba" -configuration "Debug" clean build test -destination "platform:iOS Simulator, OS:latest, name:iPhone 8"' 
+	      
     }
 
 }
