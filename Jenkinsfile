@@ -15,7 +15,7 @@ node('Slave4_Mac') {
         ])
 
         // Build and Test!
-        // sh 'xcodebuild -scheme "ParqueaderoCeiba" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 11 Pro,OS=13.6"'
+        sh 'xcodebuild -scheme "ParqueaderoCeiba" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 11 Pro,OS=13.6"'
 
 	// Publish test restults.
 	// step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
