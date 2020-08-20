@@ -14,7 +14,7 @@ class ParqueaderoCeibaTests: XCTestCase {
 
     var vehicleDataBuilder: VehicleTestDataBuilder!
     // MARK: - DI initializing
-    let container: Container = {
+    let container: Container = { 
         return DIManager().getContainer()
     }()
     
