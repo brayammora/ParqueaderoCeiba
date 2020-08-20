@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		819A6F9C4C69CCA16C2A2F13 /* Pods_ParqueaderoCeibaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ACF6F470FFC3862AB2C8C8 /* Pods_ParqueaderoCeibaTests.framework */; };
-		8734F1C56D68967970EFD7DA /* Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF29A166014EC414DBAE19AE /* Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework */; };
-		9DDB5FA597D49368F154F9D2 /* Pods_ParqueaderoCeiba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2443946C1A528E0B0EB9F46A /* Pods_ParqueaderoCeiba.framework */; };
+		0EE551C0E4C8727110199E40 /* Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91591A40BE36E1D8A75A028 /* Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework */; };
+		549826E913648CA821FC22C6 /* Pods_ParqueaderoCeibaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AD96FCB03819120F748EE8 /* Pods_ParqueaderoCeibaTests.framework */; };
 		BC11623B24DB95E30003A19E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11623A24DB95E30003A19E /* AppDelegate.swift */; };
 		BC11623D24DB95E30003A19E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11623C24DB95E30003A19E /* SceneDelegate.swift */; };
 		BC11624224DB95E30003A19E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC11624024DB95E30003A19E /* Main.storyboard */; };
@@ -31,6 +30,7 @@
 		BCD2DE4524ED683F00E6349B /* AddVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4424ED683F00E6349B /* AddVehicle.swift */; };
 		BCD2DE4A24ED93E000E6349B /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4924ED93E000E6349B /* DIManager.swift */; };
 		BCD2DE4B24EDA05500E6349B /* VehiclesRepositoryImplMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D9824ECDD2400AC645D /* VehiclesRepositoryImplMock.swift */; };
+		D2A25FFE73C38D3E1A755210 /* Pods_ParqueaderoCeiba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DD760D40CA7819D4EF3849 /* Pods_ParqueaderoCeiba.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11ACF6F470FFC3862AB2C8C8 /* Pods_ParqueaderoCeibaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParqueaderoCeibaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2443946C1A528E0B0EB9F46A /* Pods_ParqueaderoCeiba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParqueaderoCeiba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B61ADC88549F34F7FD8F949 /* Pods-ParqueaderoCeiba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeiba.release.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba.release.xcconfig"; sourceTree = "<group>"; };
-		5F7A33688EFB83F9532622CF /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		AF29A166014EC414DBAE19AE /* Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00AD96FCB03819120F748EE8 /* Pods_ParqueaderoCeibaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParqueaderoCeibaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DD760D40CA7819D4EF3849 /* Pods_ParqueaderoCeiba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParqueaderoCeiba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39DAD144CD1AD8ED3E02FE41 /* Pods-ParqueaderoCeiba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeiba.debug.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba.debug.xcconfig"; sourceTree = "<group>"; };
+		4FD6E33E4EECB8FCEFA53EB3 /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.release.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8CC856F41AEA047FFB9CCEDC /* Pods-ParqueaderoCeibaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeibaTests.debug.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeibaTests/Pods-ParqueaderoCeibaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97E66F1314DE2358C39AE70A /* Pods-ParqueaderoCeibaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeibaTests.release.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeibaTests/Pods-ParqueaderoCeibaTests.release.xcconfig"; sourceTree = "<group>"; };
+		B91591A40BE36E1D8A75A028 /* Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC11623724DB95E30003A19E /* ParqueaderoCeiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParqueaderoCeiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC11623A24DB95E30003A19E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC11623C24DB95E30003A19E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,10 +85,8 @@
 		BCD2DE4224ED641C00E6349B /* EnumTypeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTypeError.swift; sourceTree = "<group>"; };
 		BCD2DE4424ED683F00E6349B /* AddVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicle.swift; sourceTree = "<group>"; };
 		BCD2DE4924ED93E000E6349B /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
-		CA9F82E1CF8AD41A7E91F88E /* Pods-ParqueaderoCeibaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeibaTests.debug.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeibaTests/Pods-ParqueaderoCeibaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D322B5A63E9D373A3DA6974F /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.release.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E6788A5A498EAAA175A10EA9 /* Pods-ParqueaderoCeiba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeiba.debug.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba.debug.xcconfig"; sourceTree = "<group>"; };
-		F46BD08A09788EEBD3D4AD2A /* Pods-ParqueaderoCeibaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeibaTests.release.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeibaTests/Pods-ParqueaderoCeibaTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD5C79D5E14982BDECB8E674 /* Pods-ParqueaderoCeiba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeiba.release.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba.release.xcconfig"; sourceTree = "<group>"; };
+		FE6B11D3E7B91DF8CAF43D06 /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DDB5FA597D49368F154F9D2 /* Pods_ParqueaderoCeiba.framework in Frameworks */,
+				D2A25FFE73C38D3E1A755210 /* Pods_ParqueaderoCeiba.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819A6F9C4C69CCA16C2A2F13 /* Pods_ParqueaderoCeibaTests.framework in Frameworks */,
+				549826E913648CA821FC22C6 /* Pods_ParqueaderoCeibaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,19 +110,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8734F1C56D68967970EFD7DA /* Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework in Frameworks */,
+				0EE551C0E4C8727110199E40 /* Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B8FA7C7DF1CE64286B5E26C3 /* Frameworks */ = {
+		303B86ADEBD7D878632EF68A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2443946C1A528E0B0EB9F46A /* Pods_ParqueaderoCeiba.framework */,
-				AF29A166014EC414DBAE19AE /* Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework */,
-				11ACF6F470FFC3862AB2C8C8 /* Pods_ParqueaderoCeibaTests.framework */,
+				03DD760D40CA7819D4EF3849 /* Pods_ParqueaderoCeiba.framework */,
+				B91591A40BE36E1D8A75A028 /* Pods_ParqueaderoCeiba_ParqueaderoCeibaUITests.framework */,
+				00AD96FCB03819120F748EE8 /* Pods_ParqueaderoCeibaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 				BC11625B24DB95E50003A19E /* ParqueaderoCeibaUITests */,
 				BC11623824DB95E30003A19E /* Products */,
 				EF3306F8FEA69D45CA23C790 /* Pods */,
-				B8FA7C7DF1CE64286B5E26C3 /* Frameworks */,
+				303B86ADEBD7D878632EF68A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,7 +156,7 @@
 				BC186D6024E8F67E00AC645D /* Domain */,
 				BC186D6124E8F68B00AC645D /* Infraestructure */,
 				BC186D6824E9050700AC645D /* Resources */,
-				BC186D6B24E9058E00AC645D /* Supporting Files */,
+				BC186D6B24E9058E00AC645D /* SupportingFiles */,
 			);
 			path = ParqueaderoCeiba;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 				BC11623A24DB95E30003A19E /* AppDelegate.swift */,
 				BC11623C24DB95E30003A19E /* SceneDelegate.swift */,
 				BC186D6224E8FF0700AC645D /* View */,
-				BCD2DE4824ED93B200E6349B /* DI Manager */,
+				BCD2DE4824ED93B200E6349B /* DIManager */,
 				BC186D6324E8FF1500AC645D /* ViewModel */,
 			);
 			path = Presentation;
@@ -205,7 +205,7 @@
 		BC186D6124E8F68B00AC645D /* Infraestructure */ = {
 			isa = PBXGroup;
 			children = (
-				BC186D6424E8FF3A00AC645D /* DB Entities */,
+				BC186D6424E8FF3A00AC645D /* DBEntities */,
 				BC186D6724E9001E00AC645D /* Adapter */,
 				BC186D8424EA5D1C00AC645D /* Mapper */,
 				BCD2DE4124ED63FF00E6349B /* Enums */,
@@ -231,12 +231,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		BC186D6424E8FF3A00AC645D /* DB Entities */ = {
+		BC186D6424E8FF3A00AC645D /* DBEntities */ = {
 			isa = PBXGroup;
 			children = (
 				BC186D8824EAEF6B00AC645D /* VehiclePersistent.swift */,
 			);
-			path = "DB Entities";
+			path = DBEntities;
 			sourceTree = "<group>";
 		};
 		BC186D6524E8FF5200AC645D /* UseCases */ = {
@@ -272,14 +272,14 @@
 			path = MainVehicle;
 			sourceTree = "<group>";
 		};
-		BC186D6B24E9058E00AC645D /* Supporting Files */ = {
+		BC186D6B24E9058E00AC645D /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				BC11624024DB95E30003A19E /* Main.storyboard */,
 				BC11624524DB95E50003A19E /* LaunchScreen.storyboard */,
 				BC11624824DB95E50003A19E /* Info.plist */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		BC186D6E24E9AB8600AC645D /* ParkingVehicle */ = {
@@ -330,23 +330,23 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		BCD2DE4824ED93B200E6349B /* DI Manager */ = {
+		BCD2DE4824ED93B200E6349B /* DIManager */ = {
 			isa = PBXGroup;
 			children = (
 				BCD2DE4924ED93E000E6349B /* DIManager.swift */,
 			);
-			path = "DI Manager";
+			path = DIManager;
 			sourceTree = "<group>";
 		};
 		EF3306F8FEA69D45CA23C790 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E6788A5A498EAAA175A10EA9 /* Pods-ParqueaderoCeiba.debug.xcconfig */,
-				4B61ADC88549F34F7FD8F949 /* Pods-ParqueaderoCeiba.release.xcconfig */,
-				5F7A33688EFB83F9532622CF /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig */,
-				D322B5A63E9D373A3DA6974F /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.release.xcconfig */,
-				CA9F82E1CF8AD41A7E91F88E /* Pods-ParqueaderoCeibaTests.debug.xcconfig */,
-				F46BD08A09788EEBD3D4AD2A /* Pods-ParqueaderoCeibaTests.release.xcconfig */,
+				39DAD144CD1AD8ED3E02FE41 /* Pods-ParqueaderoCeiba.debug.xcconfig */,
+				BD5C79D5E14982BDECB8E674 /* Pods-ParqueaderoCeiba.release.xcconfig */,
+				FE6B11D3E7B91DF8CAF43D06 /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig */,
+				4FD6E33E4EECB8FCEFA53EB3 /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.release.xcconfig */,
+				8CC856F41AEA047FFB9CCEDC /* Pods-ParqueaderoCeibaTests.debug.xcconfig */,
+				97E66F1314DE2358C39AE70A /* Pods-ParqueaderoCeibaTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -358,11 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC11626124DB95E50003A19E /* Build configuration list for PBXNativeTarget "ParqueaderoCeiba" */;
 			buildPhases = (
-				DB0B442AE8895C593B321DC9 /* [CP] Check Pods Manifest.lock */,
+				279CB95BF46003DD8D07310E /* [CP] Check Pods Manifest.lock */,
 				BC11623324DB95E30003A19E /* Sources */,
 				BC11623424DB95E30003A19E /* Frameworks */,
 				BC11623524DB95E30003A19E /* Resources */,
-				A7A1A3E93820E9344EB813EF /* [CP] Embed Pods Frameworks */,
+				27E6AD6E533C09F79B19184F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,7 +377,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC11626424DB95E50003A19E /* Build configuration list for PBXNativeTarget "ParqueaderoCeibaTests" */;
 			buildPhases = (
-				FAFAF6E7CC36475856441CD8 /* [CP] Check Pods Manifest.lock */,
+				34E8EC501ABA2F459A4C82D9 /* [CP] Check Pods Manifest.lock */,
 				BC11624924DB95E50003A19E /* Sources */,
 				BC11624A24DB95E50003A19E /* Frameworks */,
 				BC11624B24DB95E50003A19E /* Resources */,
@@ -396,11 +396,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC11626724DB95E50003A19E /* Build configuration list for PBXNativeTarget "ParqueaderoCeibaUITests" */;
 			buildPhases = (
-				03BBC80DFAB507B533D0948D /* [CP] Check Pods Manifest.lock */,
+				53BB28C018EB988500DAB1E1 /* [CP] Check Pods Manifest.lock */,
 				BC11625424DB95E50003A19E /* Sources */,
 				BC11625524DB95E50003A19E /* Frameworks */,
 				BC11625624DB95E50003A19E /* Resources */,
-				04FE6BC93F1AE2CC5B44A366 /* [CP] Embed Pods Frameworks */,
+				5D63FCC810A69CF82DE09DD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -483,63 +483,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03BBC80DFAB507B533D0948D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		04FE6BC93F1AE2CC5B44A366 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A7A1A3E93820E9344EB813EF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB0B442AE8895C593B321DC9 /* [CP] Check Pods Manifest.lock */ = {
+		279CB95BF46003DD8D07310E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -561,7 +505,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FAFAF6E7CC36475856441CD8 /* [CP] Check Pods Manifest.lock */ = {
+		27E6AD6E533C09F79B19184F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34E8EC501ABA2F459A4C82D9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -581,6 +542,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53BB28C018EB988500DAB1E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D63FCC810A69CF82DE09DD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -776,7 +776,7 @@
 		};
 		BC11626224DB95E50003A19E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6788A5A498EAAA175A10EA9 /* Pods-ParqueaderoCeiba.debug.xcconfig */;
+			baseConfigurationReference = 39DAD144CD1AD8ED3E02FE41 /* Pods-ParqueaderoCeiba.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -795,7 +795,7 @@
 		};
 		BC11626324DB95E50003A19E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B61ADC88549F34F7FD8F949 /* Pods-ParqueaderoCeiba.release.xcconfig */;
+			baseConfigurationReference = BD5C79D5E14982BDECB8E674 /* Pods-ParqueaderoCeiba.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -814,7 +814,7 @@
 		};
 		BC11626524DB95E50003A19E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA9F82E1CF8AD41A7E91F88E /* Pods-ParqueaderoCeibaTests.debug.xcconfig */;
+			baseConfigurationReference = 8CC856F41AEA047FFB9CCEDC /* Pods-ParqueaderoCeibaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -837,7 +837,7 @@
 		};
 		BC11626624DB95E50003A19E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F46BD08A09788EEBD3D4AD2A /* Pods-ParqueaderoCeibaTests.release.xcconfig */;
+			baseConfigurationReference = 97E66F1314DE2358C39AE70A /* Pods-ParqueaderoCeibaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -860,7 +860,7 @@
 		};
 		BC11626824DB95E50003A19E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F7A33688EFB83F9532622CF /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig */;
+			baseConfigurationReference = FE6B11D3E7B91DF8CAF43D06 /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -881,7 +881,7 @@
 		};
 		BC11626924DB95E50003A19E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D322B5A63E9D373A3DA6974F /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.release.xcconfig */;
+			baseConfigurationReference = 4FD6E33E4EECB8FCEFA53EB3 /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

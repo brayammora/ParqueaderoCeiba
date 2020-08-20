@@ -4,7 +4,6 @@ target 'ParqueaderoCeiba' do
   
   pod 'RealmSwift'
   pod 'Swinject'
-  pod 'SwinjectAutoregistration'
 
   target 'ParqueaderoCeibaTests' do
     inherit! :search_paths
