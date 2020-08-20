@@ -781,7 +781,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AU73NM66Z8;
-				INFOPLIST_FILE = "ParqueaderoCeiba/Supporting Files/Info.plist";
+				INFOPLIST_FILE = ParqueaderoCeiba/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -800,7 +800,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AU73NM66Z8;
-				INFOPLIST_FILE = "ParqueaderoCeiba/Supporting Files/Info.plist";
+				INFOPLIST_FILE = ParqueaderoCeiba/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
