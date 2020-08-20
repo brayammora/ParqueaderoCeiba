@@ -18,6 +18,7 @@ node('Slave4_Mac') {
     stage('Build') {
 
         // Build 
+	sh 'sudo gem install cocoapods'
 	sh 'pod install'
 	sh 'xcodebuild -scheme "ParqueaderoCeiba" clean build CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO"'
 	// sh 'xcodebuild clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS="" CODE_SIGNING_ALLOWED="NO"'
