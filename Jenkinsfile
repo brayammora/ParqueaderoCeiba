@@ -18,8 +18,6 @@ node('Slave4_Mac') {
     stage('Build') {
 
         // Build 
-	sh 'sudo gem install cocoapods'
-	sh 'pod install'
 	sh 'xcodebuild -scheme "ParqueaderoCeiba" clean build CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO"'
 	// sh 'xcodebuild clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS="" CODE_SIGNING_ALLOWED="NO"'
 	echo "Building..."
@@ -28,7 +26,7 @@ node('Slave4_Mac') {
     stage('Test') {
 
         // Test project.
-	// sh 'xcodebuild -scheme "ParqueaderoCeiba" test -destination "platform=iOS Simulator,name=iPhone SE (2nd generation),OS=latest" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO"'
+	sh 'xcodebuild -scheme "ParqueaderoCeiba" test -destination "platform=iOS Simulator,name=iPhone SE (2nd generation),OS=latest" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO"'
 	echo "Testing..."
     }
 
@@ -36,7 +34,7 @@ node('Slave4_Mac') {
       steps{
 	// Sonar Analysis
         withSonarQubeEnv('Sonar') {
-        // sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dproject.settings=sonar-project.properties"
+        sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dproject.settings=sonar-project.properties"
 	echo "Executing Sonar Analysis..."
         }
       }
