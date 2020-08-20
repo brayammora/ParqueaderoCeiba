@@ -1,0 +1,6 @@
+framework module Pods_ParqueaderoCeibaTests {
+  umbrella header "Pods-ParqueaderoCeibaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
