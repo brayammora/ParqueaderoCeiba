@@ -27,7 +27,3 @@ class GetAllParkedVehicles {
     }
 }
 
-enum GetAllParkedVehiclesErrors: String, Error {
-    case noDataAvaliable = "There is no information available to show."
-}
-

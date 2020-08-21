@@ -26,8 +26,14 @@
 		BC186D8924EAEF6B00AC645D /* VehiclePersistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D8824EAEF6B00AC645D /* VehiclePersistent.swift */; };
 		BC186D8B24EAF04600AC645D /* MapperVehicleImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D8A24EAF04600AC645D /* MapperVehicleImpl.swift */; };
 		BC186D9524EC3E3C00AC645D /* VehicleDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D9424EC3E3C00AC645D /* VehicleDataBuilder.swift */; };
-		BCD2DE4324ED641C00E6349B /* EnumTypeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4224ED641C00E6349B /* EnumTypeError.swift */; };
-		BCD2DE4524ED683F00E6349B /* AddVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4424ED683F00E6349B /* AddVehicle.swift */; };
+		BC73A8D624EF795C004C2B20 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73A8D524EF795C004C2B20 /* Constants.swift */; };
+		BC73A8D824EF8773004C2B20 /* DateDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73A8D724EF8773004C2B20 /* DateDataBuilder.swift */; };
+		BC73A8DA24EF8D05004C2B20 /* AllowExitVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73A8D924EF8D05004C2B20 /* AllowExitVehicle.swift */; };
+		BC75CCE724F001450036E314 /* EnumPricesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCE624F001450036E314 /* EnumPricesTable.swift */; };
+		BC75CCE924F003E70036E314 /* CalculatePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCE824F003E70036E314 /* CalculatePayment.swift */; };
+		BC75CCEB24F00ABE0036E314 /* CalculateParkingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCEA24F00ABE0036E314 /* CalculateParkingTime.swift */; };
+		BCD2DE4324ED641C00E6349B /* EnumErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4224ED641C00E6349B /* EnumErrors.swift */; };
+		BCD2DE4524ED683F00E6349B /* AllowEntryVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4424ED683F00E6349B /* AllowEntryVehicle.swift */; };
 		BCD2DE4A24ED93E000E6349B /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4924ED93E000E6349B /* DIManager.swift */; };
 		BCD2DE4B24EDA05500E6349B /* VehiclesRepositoryImplMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D9824ECDD2400AC645D /* VehiclesRepositoryImplMock.swift */; };
 		D2A25FFE73C38D3E1A755210 /* Pods_ParqueaderoCeiba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DD760D40CA7819D4EF3849 /* Pods_ParqueaderoCeiba.framework */; };
@@ -82,8 +88,14 @@
 		BC186D8A24EAF04600AC645D /* MapperVehicleImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperVehicleImpl.swift; sourceTree = "<group>"; };
 		BC186D9424EC3E3C00AC645D /* VehicleDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDataBuilder.swift; sourceTree = "<group>"; };
 		BC186D9824ECDD2400AC645D /* VehiclesRepositoryImplMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesRepositoryImplMock.swift; sourceTree = "<group>"; };
-		BCD2DE4224ED641C00E6349B /* EnumTypeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTypeError.swift; sourceTree = "<group>"; };
-		BCD2DE4424ED683F00E6349B /* AddVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicle.swift; sourceTree = "<group>"; };
+		BC73A8D524EF795C004C2B20 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC73A8D724EF8773004C2B20 /* DateDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDataBuilder.swift; sourceTree = "<group>"; };
+		BC73A8D924EF8D05004C2B20 /* AllowExitVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowExitVehicle.swift; sourceTree = "<group>"; };
+		BC75CCE624F001450036E314 /* EnumPricesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumPricesTable.swift; sourceTree = "<group>"; };
+		BC75CCE824F003E70036E314 /* CalculatePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePayment.swift; sourceTree = "<group>"; };
+		BC75CCEA24F00ABE0036E314 /* CalculateParkingTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateParkingTime.swift; sourceTree = "<group>"; };
+		BCD2DE4224ED641C00E6349B /* EnumErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumErrors.swift; sourceTree = "<group>"; };
+		BCD2DE4424ED683F00E6349B /* AllowEntryVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowEntryVehicle.swift; sourceTree = "<group>"; };
 		BCD2DE4924ED93E000E6349B /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
 		BD5C79D5E14982BDECB8E674 /* Pods-ParqueaderoCeiba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeiba.release.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeiba/Pods-ParqueaderoCeiba.release.xcconfig"; sourceTree = "<group>"; };
 		FE6B11D3E7B91DF8CAF43D06 /* Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig"; path = "Target Support Files/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests/Pods-ParqueaderoCeiba-ParqueaderoCeibaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +210,8 @@
 				BC186D6524E8FF5200AC645D /* UseCases */,
 				BC186D8724EAEF4800AC645D /* Entities */,
 				BC186D7824EA494600AC645D /* Port */,
+				BC73A8D424EF794E004C2B20 /* Constants */,
+				BCD2DE4124ED63FF00E6349B /* Enums */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -208,7 +222,6 @@
 				BC186D6424E8FF3A00AC645D /* DBEntities */,
 				BC186D6724E9001E00AC645D /* Adapter */,
 				BC186D8424EA5D1C00AC645D /* Mapper */,
-				BCD2DE4124ED63FF00E6349B /* Enums */,
 			);
 			path = Infraestructure;
 			sourceTree = "<group>";
@@ -243,7 +256,10 @@
 			isa = PBXGroup;
 			children = (
 				BC186D7624EA26D800AC645D /* GetAllParkedVehicles.swift */,
-				BCD2DE4424ED683F00E6349B /* AddVehicle.swift */,
+				BCD2DE4424ED683F00E6349B /* AllowEntryVehicle.swift */,
+				BC73A8D924EF8D05004C2B20 /* AllowExitVehicle.swift */,
+				BC75CCE824F003E70036E314 /* CalculatePayment.swift */,
+				BC75CCEA24F00ABE0036E314 /* CalculateParkingTime.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -318,14 +334,24 @@
 			isa = PBXGroup;
 			children = (
 				BC186D9424EC3E3C00AC645D /* VehicleDataBuilder.swift */,
+				BC73A8D724EF8773004C2B20 /* DateDataBuilder.swift */,
 			);
 			path = DataBuilder;
+			sourceTree = "<group>";
+		};
+		BC73A8D424EF794E004C2B20 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BC73A8D524EF795C004C2B20 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		BCD2DE4124ED63FF00E6349B /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				BCD2DE4224ED641C00E6349B /* EnumTypeError.swift */,
+				BCD2DE4224ED641C00E6349B /* EnumErrors.swift */,
+				BC75CCE624F001450036E314 /* EnumPricesTable.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -592,18 +618,23 @@
 			files = (
 				BCD2DE4A24ED93E000E6349B /* DIManager.swift in Sources */,
 				BC186D7724EA26D800AC645D /* GetAllParkedVehicles.swift in Sources */,
-				BCD2DE4524ED683F00E6349B /* AddVehicle.swift in Sources */,
+				BCD2DE4524ED683F00E6349B /* AllowEntryVehicle.swift in Sources */,
 				BC11623B24DB95E30003A19E /* AppDelegate.swift in Sources */,
 				BC11623D24DB95E30003A19E /* SceneDelegate.swift in Sources */,
 				BC186D7024E9ABA600AC645D /* MainVehicleViewModel.swift in Sources */,
+				BC73A8DA24EF8D05004C2B20 /* AllowExitVehicle.swift in Sources */,
 				BC186D7C24EA536B00AC645D /* VehiclesRepositoryImpl.swift in Sources */,
+				BC73A8D624EF795C004C2B20 /* Constants.swift in Sources */,
+				BC75CCE724F001450036E314 /* EnumPricesTable.swift in Sources */,
 				BC186D8624EAECCD00AC645D /* MapperVehicleProtocol.swift in Sources */,
-				BCD2DE4324ED641C00E6349B /* EnumTypeError.swift in Sources */,
+				BC75CCEB24F00ABE0036E314 /* CalculateParkingTime.swift in Sources */,
+				BCD2DE4324ED641C00E6349B /* EnumErrors.swift in Sources */,
 				BCD2DE4B24EDA05500E6349B /* VehiclesRepositoryImplMock.swift in Sources */,
 				BC186D7A24EA49EA00AC645D /* VehiclesRepository.swift in Sources */,
 				BC186D7424EA208200AC645D /* Vehicle.swift in Sources */,
 				BC186D7224E9ABB800AC645D /* ParkingVehicleViewModel.swift in Sources */,
 				BC186D8924EAEF6B00AC645D /* VehiclePersistent.swift in Sources */,
+				BC75CCE924F003E70036E314 /* CalculatePayment.swift in Sources */,
 				BC186D8B24EAF04600AC645D /* MapperVehicleImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +645,7 @@
 			files = (
 				BC186D9524EC3E3C00AC645D /* VehicleDataBuilder.swift in Sources */,
 				BC11625224DB95E50003A19E /* ParqueaderoCeibaTests.swift in Sources */,
+				BC73A8D824EF8773004C2B20 /* DateDataBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

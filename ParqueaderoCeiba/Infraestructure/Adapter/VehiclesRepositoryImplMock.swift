@@ -23,7 +23,8 @@ class VehiclesRepositoryImplMock: VehiclesRepository {
     }
     
     func addVehicle(_ vehicle: Vehicle) -> Bool {
-        return false
+        vehicles.append(vehicle)
+        return true
     }
     
     func findVehicle(_ numberPlate: String) -> Bool {
@@ -33,4 +34,16 @@ class VehiclesRepositoryImplMock: VehiclesRepository {
         }
         return false
     }
+    
+    func getCountByVehicleType(_ type: String) -> Int {
+        return type == Constants.car ? Constants.carLimit : Constants.motorbikeLimit
+    }
+    
+    func removeVehicle(_ vehicle: Vehicle) -> Bool {
+        if let index = vehicles.firstIndex(where: { $0.numberPlate == vehicle.numberPlate }) {
+            vehicles.remove(at: index)
+        }
+        return true
+    }
+    
 }

@@ -37,8 +37,8 @@ class DIManager {
         container.register(GetAllParkedVehicles.self) { r in
             GetAllParkedVehicles(withRepository: r.resolve(VehiclesRepository.self)!)
         }
-        container.register(AddVehicle.self) { r in
-            AddVehicle(withRepository: r.resolve(VehiclesRepository.self)!)
+        container.register(AllowEntryVehicle.self) { r in
+            AllowEntryVehicle(withRepository: r.resolve(VehiclesRepository.self)!)
         }
     }
     

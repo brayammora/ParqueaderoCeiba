@@ -10,16 +10,16 @@ import Foundation
 
 class ParkingVehicleViewModel {
     
-    let addVehicle: AddVehicle
+    let allowEntryVehicle: AllowEntryVehicle
     var message: String = String()
     var messageError: String = String()
     
-    init(with addVehicle: AddVehicle) {
-        self.addVehicle = addVehicle
+    init(with allowEntryVehicle: AllowEntryVehicle) {
+        self.allowEntryVehicle = allowEntryVehicle
     }
     
-    func addVehicle(vehicle: Vehicle) {
-        addVehicle.execute(vehicle) { [weak self] response in
+    func allowEntryVehicle(vehicle: Vehicle) {
+        allowEntryVehicle.execute(vehicle) { [weak self] response in
             guard let _ = self else {
                 return
             }

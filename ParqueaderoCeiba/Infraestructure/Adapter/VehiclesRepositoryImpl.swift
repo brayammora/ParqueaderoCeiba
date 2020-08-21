@@ -17,7 +17,7 @@ class VehiclesRepositoryImpl: VehiclesRepository {
         do {
             realm = try Realm()
         } catch let error {
-            print("Error while initializing Realm -> \(error.localizedDescription)")
+            print("Realm error: \(error.localizedDescription)")
         }
     }
     
@@ -26,17 +26,16 @@ class VehiclesRepositoryImpl: VehiclesRepository {
     }
     
     func addVehicle(_ vehicle: Vehicle) -> Bool {
-        var response = true
         do {
             try realm.write {
                 realm.add(MapperVehicleImpl.mapIntoVehiclePersistent(vehicle))
             }
         } catch let error {
-            print("Error while writing into Realm -> \(error.localizedDescription)")
-            response = false
+            print("Error insert Realm -> \(error.localizedDescription)")
+            return false
         }
         
-        return response
+        return true
     }
     
     func findVehicle(_ numberPlate: String) -> Bool {
@@ -45,6 +44,26 @@ class VehiclesRepositoryImpl: VehiclesRepository {
             return true
         }
         return false
+    }
+    
+    func getCountByVehicleType(_ type: String) -> Int {
+        let vehicleType = realm.objects(VehiclePersistent.self).filter("type = '\(type)'")
+        return vehicleType.count
+    }
+    
+    func removeVehicle(_ vehicle: Vehicle) -> Bool {
+        let vehiclePersistent = realm.objects(VehiclePersistent.self).filter("numberPlate == '\(vehicle.numberPlate)'")
+        if let vPersistent = vehiclePersistent.first {
+            do {
+                try realm.write {
+                    realm.delete(vPersistent)
+                }
+            } catch let error {
+                print("Error delete Realm -> \(error.localizedDescription)")
+                return false
+            }
+        }
+        return true
     }
     
 }
