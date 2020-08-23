@@ -10,10 +10,10 @@ import Foundation
 @testable import ParqueaderoCeiba
 
 class VehicleTestDataBuilder {
-    var type: String
-    var numberPlate: String
-    var cc: Int
-    var date: Date
+    private var type: String
+    private var numberPlate: String
+    private var cc: Int
+    private var date: Date
     
     init() {
         self.type = "Default Value"

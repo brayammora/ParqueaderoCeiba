@@ -198,8 +198,8 @@
 				BC11623A24DB95E30003A19E /* AppDelegate.swift */,
 				BC11623C24DB95E30003A19E /* SceneDelegate.swift */,
 				BC186D6224E8FF0700AC645D /* View */,
-				BCD2DE4824ED93B200E6349B /* DIManager */,
 				BC186D6324E8FF1500AC645D /* ViewModel */,
+				BCD2DE4824ED93B200E6349B /* DIManager */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
