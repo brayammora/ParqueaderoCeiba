@@ -17,6 +17,7 @@ class DIManager {
         registerRepositories()
         registerUseCases()
         registerViewModels()
+        registerViewControllers()
     }
     
     func getContainer() -> Container {
@@ -43,8 +44,14 @@ class DIManager {
     }
     
     func registerViewModels() {
-        container.register(MainVehicleViewModel.self) { r in
-            MainVehicleViewModel(with: r.resolve(GetAllParkedVehicles.self)!)
+        container.register(MainParkViewModel.self) { r in
+            MainParkViewModel(with: r.resolve(GetAllParkedVehicles.self)!)
+        }
+    }
+    
+    func registerViewControllers() {
+        container.register(MainParkViewController.self) { r in
+            MainParkViewController(withViewModel: r.resolve(MainParkViewModel.self)!)
         }
     }
 }

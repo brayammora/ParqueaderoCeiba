@@ -11,12 +11,11 @@
 		549826E913648CA821FC22C6 /* Pods_ParqueaderoCeibaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AD96FCB03819120F748EE8 /* Pods_ParqueaderoCeibaTests.framework */; };
 		BC11623B24DB95E30003A19E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11623A24DB95E30003A19E /* AppDelegate.swift */; };
 		BC11623D24DB95E30003A19E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11623C24DB95E30003A19E /* SceneDelegate.swift */; };
-		BC11624224DB95E30003A19E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC11624024DB95E30003A19E /* Main.storyboard */; };
 		BC11624424DB95E50003A19E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC11624324DB95E50003A19E /* Assets.xcassets */; };
 		BC11624724DB95E50003A19E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC11624524DB95E50003A19E /* LaunchScreen.storyboard */; };
 		BC11625224DB95E50003A19E /* ParqueaderoCeibaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11625124DB95E50003A19E /* ParqueaderoCeibaTests.swift */; };
 		BC11625D24DB95E50003A19E /* ParqueaderoCeibaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11625C24DB95E50003A19E /* ParqueaderoCeibaUITests.swift */; };
-		BC186D7024E9ABA600AC645D /* MainVehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D6F24E9ABA600AC645D /* MainVehicleViewModel.swift */; };
+		BC186D7024E9ABA600AC645D /* MainParkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D6F24E9ABA600AC645D /* MainParkViewModel.swift */; };
 		BC186D7224E9ABB800AC645D /* ParkingVehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D7124E9ABB800AC645D /* ParkingVehicleViewModel.swift */; };
 		BC186D7424EA208200AC645D /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D7324EA208200AC645D /* Vehicle.swift */; };
 		BC186D7724EA26D800AC645D /* GetAllParkedVehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D7624EA26D800AC645D /* GetAllParkedVehicles.swift */; };
@@ -32,6 +31,10 @@
 		BC75CCE724F001450036E314 /* EnumPricesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCE624F001450036E314 /* EnumPricesTable.swift */; };
 		BC75CCE924F003E70036E314 /* CalculatePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCE824F003E70036E314 /* CalculatePayment.swift */; };
 		BC75CCEB24F00ABE0036E314 /* CalculateParkingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCEA24F00ABE0036E314 /* CalculateParkingTime.swift */; };
+		BC75CCEE24F2F14D0036E314 /* MainParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCEC24F2F14D0036E314 /* MainParkViewController.swift */; };
+		BC75CCF124F313D30036E314 /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCF024F313D30036E314 /* VehicleCell.swift */; };
+		BC75CCF324F320AA0036E314 /* ParkingVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCF224F320AA0036E314 /* ParkingVehicleViewController.swift */; };
+		BC75CCF724F321A10036E314 /* TableViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCF624F321A10036E314 /* TableViewHelpers.swift */; };
 		BCD2DE4324ED641C00E6349B /* EnumErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4224ED641C00E6349B /* EnumErrors.swift */; };
 		BCD2DE4524ED683F00E6349B /* AllowEntryVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4424ED683F00E6349B /* AllowEntryVehicle.swift */; };
 		BCD2DE4A24ED93E000E6349B /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4924ED93E000E6349B /* DIManager.swift */; };
@@ -67,7 +70,6 @@
 		BC11623724DB95E30003A19E /* ParqueaderoCeiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParqueaderoCeiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC11623A24DB95E30003A19E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC11623C24DB95E30003A19E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC11624124DB95E30003A19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC11624324DB95E50003A19E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC11624624DB95E50003A19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC11624824DB95E50003A19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +79,7 @@
 		BC11625824DB95E50003A19E /* ParqueaderoCeibaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParqueaderoCeibaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC11625C24DB95E50003A19E /* ParqueaderoCeibaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParqueaderoCeibaUITests.swift; sourceTree = "<group>"; };
 		BC11625E24DB95E50003A19E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC186D6F24E9ABA600AC645D /* MainVehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVehicleViewModel.swift; sourceTree = "<group>"; };
+		BC186D6F24E9ABA600AC645D /* MainParkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainParkViewModel.swift; sourceTree = "<group>"; };
 		BC186D7124E9ABB800AC645D /* ParkingVehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingVehicleViewModel.swift; sourceTree = "<group>"; };
 		BC186D7324EA208200AC645D /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		BC186D7624EA26D800AC645D /* GetAllParkedVehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllParkedVehicles.swift; sourceTree = "<group>"; };
@@ -94,6 +96,10 @@
 		BC75CCE624F001450036E314 /* EnumPricesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumPricesTable.swift; sourceTree = "<group>"; };
 		BC75CCE824F003E70036E314 /* CalculatePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePayment.swift; sourceTree = "<group>"; };
 		BC75CCEA24F00ABE0036E314 /* CalculateParkingTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateParkingTime.swift; sourceTree = "<group>"; };
+		BC75CCEC24F2F14D0036E314 /* MainParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainParkViewController.swift; sourceTree = "<group>"; };
+		BC75CCF024F313D30036E314 /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		BC75CCF224F320AA0036E314 /* ParkingVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingVehicleViewController.swift; sourceTree = "<group>"; };
+		BC75CCF624F321A10036E314 /* TableViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelpers.swift; sourceTree = "<group>"; };
 		BCD2DE4224ED641C00E6349B /* EnumErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumErrors.swift; sourceTree = "<group>"; };
 		BCD2DE4424ED683F00E6349B /* AllowEntryVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowEntryVehicle.swift; sourceTree = "<group>"; };
 		BCD2DE4924ED93E000E6349B /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
@@ -229,7 +235,8 @@
 		BC186D6224E8FF0700AC645D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BC186D6A24E9055300AC645D /* MainVehicle */,
+				BC75CCF524F321930036E314 /* ExtensionHelpers */,
+				BC186D6A24E9055300AC645D /* MainPark */,
 				BC186D6E24E9AB8600AC645D /* ParkingVehicle */,
 			);
 			path = View;
@@ -238,7 +245,7 @@
 		BC186D6324E8FF1500AC645D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BC186D6F24E9ABA600AC645D /* MainVehicleViewModel.swift */,
+				BC186D6F24E9ABA600AC645D /* MainParkViewModel.swift */,
 				BC186D7124E9ABB800AC645D /* ParkingVehicleViewModel.swift */,
 			);
 			path = ViewModel;
@@ -281,17 +288,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		BC186D6A24E9055300AC645D /* MainVehicle */ = {
+		BC186D6A24E9055300AC645D /* MainPark */ = {
 			isa = PBXGroup;
 			children = (
+				BC75CCF424F3216D0036E314 /* VehicleCell */,
+				BC75CCEC24F2F14D0036E314 /* MainParkViewController.swift */,
 			);
-			path = MainVehicle;
+			path = MainPark;
 			sourceTree = "<group>";
 		};
 		BC186D6B24E9058E00AC645D /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				BC11624024DB95E30003A19E /* Main.storyboard */,
 				BC11624524DB95E50003A19E /* LaunchScreen.storyboard */,
 				BC11624824DB95E50003A19E /* Info.plist */,
 			);
@@ -301,6 +309,7 @@
 		BC186D6E24E9AB8600AC645D /* ParkingVehicle */ = {
 			isa = PBXGroup;
 			children = (
+				BC75CCF224F320AA0036E314 /* ParkingVehicleViewController.swift */,
 			);
 			path = ParkingVehicle;
 			sourceTree = "<group>";
@@ -345,6 +354,22 @@
 				BC73A8D524EF795C004C2B20 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		BC75CCF424F3216D0036E314 /* VehicleCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC75CCF024F313D30036E314 /* VehicleCell.swift */,
+			);
+			path = VehicleCell;
+			sourceTree = "<group>";
+		};
+		BC75CCF524F321930036E314 /* ExtensionHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				BC75CCF624F321A10036E314 /* TableViewHelpers.swift */,
+			);
+			path = ExtensionHelpers;
 			sourceTree = "<group>";
 		};
 		BCD2DE4124ED63FF00E6349B /* Enums */ = {
@@ -488,7 +513,6 @@
 			files = (
 				BC11624724DB95E50003A19E /* LaunchScreen.storyboard in Resources */,
 				BC11624424DB95E50003A19E /* Assets.xcassets in Resources */,
-				BC11624224DB95E30003A19E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,15 +645,19 @@
 				BCD2DE4524ED683F00E6349B /* AllowEntryVehicle.swift in Sources */,
 				BC11623B24DB95E30003A19E /* AppDelegate.swift in Sources */,
 				BC11623D24DB95E30003A19E /* SceneDelegate.swift in Sources */,
-				BC186D7024E9ABA600AC645D /* MainVehicleViewModel.swift in Sources */,
+				BC186D7024E9ABA600AC645D /* MainParkViewModel.swift in Sources */,
 				BC73A8DA24EF8D05004C2B20 /* AllowExitVehicle.swift in Sources */,
+				BC75CCF724F321A10036E314 /* TableViewHelpers.swift in Sources */,
 				BC186D7C24EA536B00AC645D /* VehiclesRepositoryImpl.swift in Sources */,
+				BC75CCF124F313D30036E314 /* VehicleCell.swift in Sources */,
+				BC75CCF324F320AA0036E314 /* ParkingVehicleViewController.swift in Sources */,
 				BC73A8D624EF795C004C2B20 /* Constants.swift in Sources */,
 				BC75CCE724F001450036E314 /* EnumPricesTable.swift in Sources */,
 				BC186D8624EAECCD00AC645D /* MapperVehicleProtocol.swift in Sources */,
 				BC75CCEB24F00ABE0036E314 /* CalculateParkingTime.swift in Sources */,
 				BCD2DE4324ED641C00E6349B /* EnumErrors.swift in Sources */,
 				BCD2DE4B24EDA05500E6349B /* VehiclesRepositoryImplMock.swift in Sources */,
+				BC75CCEE24F2F14D0036E314 /* MainParkViewController.swift in Sources */,
 				BC186D7A24EA49EA00AC645D /* VehiclesRepository.swift in Sources */,
 				BC186D7424EA208200AC645D /* Vehicle.swift in Sources */,
 				BC186D7224E9ABB800AC645D /* ParkingVehicleViewModel.swift in Sources */,
@@ -673,14 +701,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BC11624024DB95E30003A19E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC11624124DB95E30003A19E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BC11624524DB95E50003A19E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -1,5 +1,5 @@
 //
-//  MainVehicleViewModel.swift
+//  MainParkViewModel.swift
 //  ParqueaderoCeiba
 //
 //  Created by Brayam Alberto Mora Arias - Ceiba Software on 16/08/20.
@@ -8,10 +8,17 @@
 
 import Foundation
 
-class MainVehicleViewModel {
+class MainParkViewModel {
     
     let getAllParkedVehicles: GetAllParkedVehicles
-    var vechicles: [Vehicle] = []
+    var vechicles: [Vehicle] = [
+        Vehicle(type: "car", numberPlate: "ABC123", cc: 0, date: Date())
+    ]
+    
+    // MARK: View Messages
+    let cellId = "vehicleCell"
+    let navigationTitle = "Vehicles"
+    let emptyListMessage = "Parking is empty"
     var messageError: String = String()
     
     init(with getAllParkedVehicles: GetAllParkedVehicles) {
