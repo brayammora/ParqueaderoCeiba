@@ -8,23 +8,44 @@
 
 import Foundation
 
-enum TypeError: String, Error {
-    case internalError = "A internal error has ocurred."
-    case serverError = "A serverError error has ocurred."
-    case requestError = "A requestError error has ocurred."
-}
-
-enum GetAllParkedVehiclesErrors: String, Error {
-    case noDataAvaliable = "There is no information available to show."
+enum GetAllParkedVehiclesErrors: Error {
+    case noDataAvaliable
+    
+    var description: String {
+        switch self {
+        case .noDataAvaliable:
+            return "There is no information available to show."
+        }
+    }
 }
 
 enum AllowEntryVehicleErrors: String, Error {
-    case itsAlreadyParked = "The vehicle you are trying to enter is already parked."
-    case parkIsFull = "The park is full. The vehicle can't enter."
-    case canNotEnterToday = "The vehicle can't enter today because number plate not is permitted on monday and sunday."
-    case vehicleCantAdded = "The vehicle can't added to database, please try later."
+    case itsAlreadyParked
+    case parkIsFull
+    case canNotEnterToday
+    case vehicleCantAdded
+    
+    var description: String {
+        switch self {
+        case .itsAlreadyParked:
+            return "The vehicle you are trying to enter is already parked."
+        case .parkIsFull:
+            return "The park is full. The vehicle can't enter."
+        case .canNotEnterToday:
+            return "The vehicle can't enter today because number plate not is permitted on monday and sunday."
+        case .vehicleCantAdded:
+            return "The vehicle can't added to database, please try later."
+        }
+    }
 }
 
-enum AllowExitVehicleErrors: String, Error {
-    case vehicleCantExit = "There is a problem with the exit, please try again."
+enum AllowExitVehicleErrors: Error {
+    case vehicleCantExit
+    
+    var description: String {
+        switch self {
+        case .vehicleCantExit:
+            return "There is a problem with the exit, please try again."
+        }
+    }
 }

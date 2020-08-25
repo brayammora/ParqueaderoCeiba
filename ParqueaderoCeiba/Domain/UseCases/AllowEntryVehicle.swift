@@ -30,7 +30,7 @@ class AllowEntryVehicle {
             completion(.failure(.parkIsFull))
             return
         }
-        if canEnterToday(vehicle.numberPlate) {
+        if canNotEnterToday(vehicle.numberPlate, vehicle.date) {
             completion(.failure(.canNotEnterToday))
             return
         }
@@ -49,17 +49,17 @@ class AllowEntryVehicle {
     
     private func isThereSiteAvaliableByVehicleType(_ type: String) -> Bool {
         let count = vehiclesRepository.getCountByVehicleType(type)
-        return (type.lowercased() == Constants.car && count == Constants.carLimit) ||
-            (type.lowercased() == Constants.motorbike && count == Constants.motorbikeLimit)
+        return (type == Constants.car && count == Constants.carLimit) ||
+            (type == Constants.motorbike && count == Constants.motorbikeLimit)
     }
     
-    private func canEnterToday (_ numberPlate: String) -> Bool {
+    private func canNotEnterToday (_ numberPlate: String, _ date: Date) -> Bool {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE"
-        let today = dateFormatter.string(from: Date())
+        let today = dateFormatter.string(from: date)
         
-        return numberPlate.starts(with: Constants.numberPlateStartsWith) &&
-            (today.lowercased() != Constants.sunday ||
-            today.lowercased() != Constants.monday)
+        return (today.lowercased() == Constants.sunday ||
+            today.lowercased() == Constants.monday) &&
+            numberPlate.starts(with: Constants.numberPlateStartsWithA)
     }
 }

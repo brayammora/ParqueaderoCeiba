@@ -8,7 +8,13 @@
 
 import UIKit
 
+//protocol VehicleCellDelegate {
+//    func allowExitVehicle(_ vehicle: Vehicle)
+//}
+
 class VehicleCell: UITableViewCell {
+    
+//    var delegate: VehicleCellDelegate?
     
     var vehicle: Vehicle? {
         didSet {
@@ -21,8 +27,8 @@ class VehicleCell: UITableViewCell {
     
     let profileImageView: UIImageView = {
         let img = UIImageView()
-        img.contentMode = .scaleAspectFill // image will never be strecthed vertially or horizontally
-        img.translatesAutoresizingMaskIntoConstraints = false // enable autolayout
+        img.contentMode = .scaleAspectFill
+        img.translatesAutoresizingMaskIntoConstraints = false
         img.layer.cornerRadius = 5
         img.clipsToBounds = true
        return img
@@ -30,7 +36,7 @@ class VehicleCell: UITableViewCell {
     
     let numberPlateLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -38,7 +44,7 @@ class VehicleCell: UITableViewCell {
     
     let entryDateLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.font = UIFont.boldSystemFont(ofSize: 12)
         label.textColor = .black
         label.layer.cornerRadius = 5
         label.clipsToBounds = true
@@ -46,10 +52,24 @@ class VehicleCell: UITableViewCell {
         return label
     }()
     
+//    let exitImageView: UIButton = {
+//        let btn = UIButton(type: .system)
+//        btn.setImage(UIImage(systemName: "multiply.circle.fill"), for: .normal)
+//        btn.backgroundColor = .none
+//        btn.tintColor = .black
+//        btn.translatesAutoresizingMaskIntoConstraints = false
+//        btn.contentMode = .scaleAspectFill
+//        btn.layer.cornerRadius = 13
+//        btn.clipsToBounds = true
+//        btn.addTarget(self, action: #selector(goToMainAndAllowExitVehicle), for: .touchUpInside)
+//        btn.isUserInteractionEnabled = true
+//        return btn
+//    }()
+    
     let containerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.clipsToBounds = true // this will make sure its children do not go out of the boundary
+        view.clipsToBounds = true
         return view
     }()
     
@@ -75,6 +95,7 @@ class VehicleCell: UITableViewCell {
         contentView.addSubview(profileImageView)
         containerView.addSubview(numberPlateLabel)
         containerView.addSubview(entryDateLabel)
+//        containerView.addSubview(exitImageView)
         contentView.addSubview(containerView)
     }
     
@@ -83,14 +104,14 @@ class VehicleCell: UITableViewCell {
         // profile image
         profileImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
         profileImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant:10).isActive = true
-        profileImageView.widthAnchor.constraint(equalToConstant:70).isActive = true
-        profileImageView.heightAnchor.constraint(equalToConstant:70).isActive = true
+        profileImageView.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        profileImageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         // container view
         containerView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
         containerView.leadingAnchor.constraint(equalTo: self.profileImageView.trailingAnchor, constant:10).isActive = true
         containerView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant:-10).isActive = true
-        containerView.heightAnchor.constraint(equalToConstant:40).isActive = true
+        containerView.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         // number plate
         numberPlateLabel.topAnchor.constraint(equalTo: self.containerView.topAnchor).isActive = true
@@ -101,6 +122,12 @@ class VehicleCell: UITableViewCell {
         entryDateLabel.topAnchor.constraint(equalTo: self.numberPlateLabel.bottomAnchor).isActive = true
         entryDateLabel.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor).isActive = true
         entryDateLabel.topAnchor.constraint(equalTo: self.numberPlateLabel.bottomAnchor).isActive = true
+        
+//        // exit button
+//        exitImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
+//        exitImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
+//        exitImageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant:-20).isActive = true
+//        exitImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
     }
     
     private func formatDate (_ date: Date) -> String {
@@ -108,5 +135,10 @@ class VehicleCell: UITableViewCell {
         dateFormatter.dateFormat = "MMM d, h:mm a"
         return dateFormatter.string(from: date)
     }
+    
+//    @objc private func goToMainAndAllowExitVehicle(_ sender: Any) {
+//        guard let vehicle = vehicle else { return }
+//        delegate?.allowExitVehicle(vehicle)
+//    }
     
 }

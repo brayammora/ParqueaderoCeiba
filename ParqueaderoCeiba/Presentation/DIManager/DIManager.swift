@@ -26,10 +26,10 @@ class DIManager {
     
     func registerRepositories() {
         container.register(VehiclesRepository.self  ) { _ in
-            #if ParqueaderoCeiba
-            return VehiclesRepositoryImpl()
-            #else
+            #if TEST
             return VehiclesRepositoryImplMock()
+            #elseif DEBUG
+            return VehiclesRepositoryImpl()
             #endif
         }.inObjectScope(.container)
     }
@@ -41,17 +41,26 @@ class DIManager {
         container.register(AllowEntryVehicle.self) { r in
             AllowEntryVehicle(withRepository: r.resolve(VehiclesRepository.self)!)
         }
+        container.register(AllowExitVehicle.self) { r in
+            AllowExitVehicle(withRepository: r.resolve(VehiclesRepository.self)!)
+        }
     }
     
     func registerViewModels() {
         container.register(MainParkViewModel.self) { r in
-            MainParkViewModel(with: r.resolve(GetAllParkedVehicles.self)!)
+            MainParkViewModel(with: r.resolve(GetAllParkedVehicles.self)!, with: r.resolve(AllowExitVehicle.self)!)
+        }
+        container.register(ParkingVehicleViewModel.self) { r in
+            ParkingVehicleViewModel(with: r.resolve(AllowEntryVehicle.self)!)
         }
     }
     
     func registerViewControllers() {
         container.register(MainParkViewController.self) { r in
             MainParkViewController(withViewModel: r.resolve(MainParkViewModel.self)!)
+        }
+        container.register(ParkingVehicleViewController.self) { r in
+            ParkingVehicleViewController(withViewModel: r.resolve(ParkingVehicleViewModel.self)!)
         }
     }
 }

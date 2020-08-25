@@ -9,12 +9,12 @@
 import Foundation
 
 struct Constants {
-    static let car = "car"
+    static let car = "Car"
     static let carLimit = 20
-    static let motorbike = "motorbike"
+    static let motorbike = "Motorbike"
     static let motorbikeLimit = 10
     
-    static let numberPlateStartsWith = "A"
+    static let numberPlateStartsWithA = "A"
     
     static let sunday = "sunday"
     static let monday = "monday"

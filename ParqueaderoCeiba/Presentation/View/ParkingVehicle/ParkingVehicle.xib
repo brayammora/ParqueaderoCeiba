@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParkingVehicleViewController" customModule="ParqueaderoCeiba" customModuleProvider="target">
+            <connections>
+                <outlet property="ccTextField" destination="beP-pK-t73" id="NEH-jC-qrl"/>
+                <outlet property="numberPlateTextField" destination="eU6-Nj-LX4" id="3WA-7K-KCi"/>
+                <outlet property="vehicleTypePicker" destination="qtH-oh-Ov3" id="3lC-Hb-7UN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Y7e-ca-mKe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9uP-Gb-ytu" userLabel="Vehicle Type Section">
+                    <rect key="frame" x="20" y="44" width="374" height="95"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J94-Dl-RUi" userLabel="VehicleTypeLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="OKK-X6-cUx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtH-oh-Ov3" userLabel="VehicleTypePickerView">
+                            <rect key="frame" x="0.0" y="40" width="374" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="Lku-KG-INh"/>
+                            </constraints>
+                        </pickerView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="J94-Dl-RUi" firstAttribute="leading" secondItem="9uP-Gb-ytu" secondAttribute="leading" id="0YX-5p-Gc6"/>
+                        <constraint firstItem="qtH-oh-Ov3" firstAttribute="leading" secondItem="9uP-Gb-ytu" secondAttribute="leading" id="3Tt-9w-pas"/>
+                        <constraint firstAttribute="trailing" secondItem="qtH-oh-Ov3" secondAttribute="trailing" id="JQU-PE-4FP"/>
+                        <constraint firstItem="J94-Dl-RUi" firstAttribute="top" secondItem="9uP-Gb-ytu" secondAttribute="top" id="dop-8X-sNS"/>
+                        <constraint firstAttribute="trailing" secondItem="J94-Dl-RUi" secondAttribute="trailing" id="l5m-Ls-pjF"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tWt-cf-AEs" userLabel="Number Plate Section">
+                    <rect key="frame" x="20" y="149" width="374" height="68"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number plate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TA-8N-yyD" userLabel="NumberPlateLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="6yL-fd-7bI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eU6-Nj-LX4" userLabel="NumberPlateTextField">
+                            <rect key="frame" x="0.0" y="28" width="374" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="XOW-jN-CEz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="eU6-Nj-LX4" secondAttribute="trailing" id="5Ec-uS-zmf"/>
+                        <constraint firstItem="4TA-8N-yyD" firstAttribute="leading" secondItem="tWt-cf-AEs" secondAttribute="leading" id="6Nc-m1-H43"/>
+                        <constraint firstItem="eU6-Nj-LX4" firstAttribute="leading" secondItem="tWt-cf-AEs" secondAttribute="leading" id="Bup-Sm-2i7"/>
+                        <constraint firstItem="4TA-8N-yyD" firstAttribute="top" secondItem="tWt-cf-AEs" secondAttribute="top" id="eQn-MY-uc3"/>
+                        <constraint firstAttribute="trailing" secondItem="4TA-8N-yyD" secondAttribute="trailing" id="mvN-bf-OPA"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e1O-fk-Ya5" userLabel="CC Section">
+                    <rect key="frame" x="20" y="227" width="374" height="68"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hf5-Ze-msP" userLabel="CCLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="MBd-WY-S70"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beP-pK-t73" userLabel="CCTextField">
+                            <rect key="frame" x="0.0" y="28" width="374" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Dtq-cu-TRT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hf5-Ze-msP" firstAttribute="leading" secondItem="e1O-fk-Ya5" secondAttribute="leading" id="Fr1-fU-dD2"/>
+                        <constraint firstAttribute="trailing" secondItem="hf5-Ze-msP" secondAttribute="trailing" id="Lpr-es-Rp6"/>
+                        <constraint firstAttribute="trailing" secondItem="beP-pK-t73" secondAttribute="trailing" id="QTt-uY-fAM"/>
+                        <constraint firstItem="hf5-Ze-msP" firstAttribute="top" secondItem="e1O-fk-Ya5" secondAttribute="top" id="bB6-Mo-xLQ"/>
+                        <constraint firstItem="beP-pK-t73" firstAttribute="leading" secondItem="e1O-fk-Ya5" secondAttribute="leading" id="rZe-kT-v7R"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="e1O-fk-Ya5" firstAttribute="top" secondItem="tWt-cf-AEs" secondAttribute="bottom" constant="10" id="3gh-S9-Yef"/>
+                <constraint firstItem="9uP-Gb-ytu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GKL-L7-LRE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="e1O-fk-Ya5" secondAttribute="trailing" constant="20" id="LmZ-hA-SII"/>
+                <constraint firstItem="e1O-fk-Ya5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="MC1-hm-vo5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9uP-Gb-ytu" secondAttribute="trailing" constant="20" id="TbX-hk-jRZ"/>
+                <constraint firstItem="tWt-cf-AEs" firstAttribute="top" secondItem="9uP-Gb-ytu" secondAttribute="bottom" constant="10" id="aCK-9z-TaD"/>
+                <constraint firstItem="9uP-Gb-ytu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="d7E-eC-BsZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tWt-cf-AEs" secondAttribute="trailing" constant="20" id="gv9-Y0-00K"/>
+                <constraint firstItem="tWt-cf-AEs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="wG7-4i-1XT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.8840579710145" y="147.99107142857142"/>
+        </view>
+    </objects>
+</document>
