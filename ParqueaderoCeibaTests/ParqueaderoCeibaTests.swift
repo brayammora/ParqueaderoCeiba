@@ -50,6 +50,8 @@ class ParqueaderoCeibaTests: XCTestCase {
     func testCanPark() {
         // Arrange
         vehicleDataBuilder.withNumberPlate("BBB222")
+        dateDataBuilder.withTuesday()
+        vehicleDataBuilder.withDate(dateDataBuilder.build())
         let vehicle: Vehicle = vehicleDataBuilder.build()
         var resultMessage: String!
         // Act
@@ -291,6 +293,7 @@ class ParqueaderoCeibaTests: XCTestCase {
         dateDataBuilder.withDays(1)
         dateDataBuilder.withHours(0)
         dateDataBuilder.withMinutes(0)
+        dateDataBuilder.withSeconds(0)
         vehicleDataBuilder.withDate(dateDataBuilder.build())
         vehicleDataBuilder.withType(Constants.motorbike)
         vehicleDataBuilder.withCC(700)

@@ -17,16 +17,18 @@ class DateDataBuilder {
     var day: Int
     var hour: Int
     var minute: Int
+    var second: Int
     
     init() {
         self.dateComponents = DateComponents()
         self.calendar = Calendar.current
-        self.dateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: Date())
+        self.dateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: Date())
         self.year = dateComponents.year!
         self.month = dateComponents.month!
         self.day = dateComponents.day!
         self.hour = dateComponents.hour!
         self.minute = dateComponents.minute!
+        self.second = dateComponents.second!
     }
     
     func withYear (_ year: Int) {
@@ -49,9 +51,19 @@ class DateDataBuilder {
         dateComponents.minute = dateComponents.minute! - minutes
     }
     
+    func withSeconds (_ seconds: Int) {
+        dateComponents.second = dateComponents.second! - seconds
+    }
+    
     func withMonday() {
         dateComponents.year = 2020
         dateComponents.day = 24
+        dateComponents.month = 8
+    }
+    
+    func withTuesday() {
+        dateComponents.year = 2020
+        dateComponents.day = 25
         dateComponents.month = 8
     }
     

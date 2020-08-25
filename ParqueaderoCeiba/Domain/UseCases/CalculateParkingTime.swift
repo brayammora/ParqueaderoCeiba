@@ -12,11 +12,17 @@ class CalculateParkingTime {
     
     static func getParkingTime(_ vehicleEnterDate: Date) -> (Int, Int) {
         
-        let diffComponents = Calendar.current.dateComponents([.hour, .day, .minute], from: vehicleEnterDate, to: Date())
+        let diffComponents = Calendar.current.dateComponents([.hour, .day, .minute, .second], from: vehicleEnterDate, to: Date())
         var days = diffComponents.day ?? 0
         var hours = diffComponents.hour ?? 0
         var minutes = diffComponents.minute ?? 0
+        var seconds = diffComponents.second ?? 0
 
+        if seconds != Constants.zeroMinutes {
+            minutes += 1
+            seconds = 0
+        }
+        
         if minutes != Constants.zeroMinutes {
             hours += 1
             minutes = 0

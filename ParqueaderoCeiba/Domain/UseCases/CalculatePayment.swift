@@ -12,7 +12,7 @@ class CalculatePayment {
     
     static func calculatePayment(withDays days: Int, withHours hours: Int, withVehicle vehicle: Vehicle) -> Double {
         
-        var totalCharge: Double = 0.0
+        var totalCharge: Double = 0
         
         switch vehicle.type {
             case Constants.car:

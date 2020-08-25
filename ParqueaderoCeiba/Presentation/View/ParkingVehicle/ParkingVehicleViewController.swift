@@ -30,6 +30,7 @@ class ParkingVehicleViewController: UIViewController {
         super.viewDidLoad()
         setupNavbar()
         setupTypePicker()
+        setupTextFields()
     }
     
     private func setupNavbar() {
@@ -42,14 +43,21 @@ class ParkingVehicleViewController: UIViewController {
             let numberPlate = numberPlateTextField.text!
             let cc = ccTextField.text!
             let type = viewModel!.pickerOptions[vehicleTypePicker.selectedRow(inComponent: 0)]
-            viewModel?.allowEntryVehicle(numberPlate, cc, type)
             
-            let alert = UIAlertController(title: "Alert!", message: viewModel?.message, preferredStyle: .alert)
-            let ok = UIAlertAction(title: "OK", style: .default) { _ in
-                self.navigationController?.popViewController(animated: true)
+            if cc.isNumber() {
+                viewModel?.allowEntryVehicle(numberPlate, cc, type)
+                
+                let alert = UIAlertController(title: "Alert!", message: viewModel?.message, preferredStyle: .alert)
+                let ok = UIAlertAction(title: "OK", style: .default) { _ in
+                    self.navigationController?.popViewController(animated: true)
+                }
+                alert.addAction(ok)
+                self.present(alert, animated: true)
+            } else {
+                ccTextField.layer.borderColor = UIColor.red.cgColor
+                ccTextField.layer.borderWidth = 1.0
+                ccTextField.resignFirstResponder()
             }
-            alert.addAction(ok)
-            self.present(alert, animated: true)
             
         } else {
             let alert = UIAlertController(title: "Alert!", message: viewModel?.messageMandatoryFields, preferredStyle: .alert)
@@ -62,6 +70,11 @@ class ParkingVehicleViewController: UIViewController {
     private func setupTypePicker() {
         vehicleTypePicker.delegate = self
         vehicleTypePicker.dataSource = self
+    }
+    
+    private func setupTextFields() {
+        ccTextField.delegate = self
+        numberPlateTextField.delegate = self
     }
     
 }
@@ -80,8 +93,21 @@ extension ParkingVehicleViewController: UIPickerViewDataSource {
     }
 }
 
-extension ParkingVehicleViewController: UIPickerViewDelegate {
-//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        viewModel?.pickerSelection = viewModel!.pickerOptions[row]
-//    }
+extension String {
+    func isNumber() -> Bool {
+        return NumberFormatter().number(from: self) != nil
+    }
 }
+
+extension ParkingVehicleViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == ccTextField {
+            ccTextField.layer.borderColor = .none
+            ccTextField.layer.borderWidth = 0
+        }
+    }
+}
+
+extension ParkingVehicleViewController: UIPickerViewDelegate {
+}
+

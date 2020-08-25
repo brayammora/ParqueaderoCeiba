@@ -8,13 +8,7 @@
 
 import UIKit
 
-//protocol VehicleCellDelegate {
-//    func allowExitVehicle(_ vehicle: Vehicle)
-//}
-
 class VehicleCell: UITableViewCell {
-    
-//    var delegate: VehicleCellDelegate?
     
     var vehicle: Vehicle? {
         didSet {
@@ -52,20 +46,6 @@ class VehicleCell: UITableViewCell {
         return label
     }()
     
-//    let exitImageView: UIButton = {
-//        let btn = UIButton(type: .system)
-//        btn.setImage(UIImage(systemName: "multiply.circle.fill"), for: .normal)
-//        btn.backgroundColor = .none
-//        btn.tintColor = .black
-//        btn.translatesAutoresizingMaskIntoConstraints = false
-//        btn.contentMode = .scaleAspectFill
-//        btn.layer.cornerRadius = 13
-//        btn.clipsToBounds = true
-//        btn.addTarget(self, action: #selector(goToMainAndAllowExitVehicle), for: .touchUpInside)
-//        btn.isUserInteractionEnabled = true
-//        return btn
-//    }()
-    
     let containerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -95,7 +75,6 @@ class VehicleCell: UITableViewCell {
         contentView.addSubview(profileImageView)
         containerView.addSubview(numberPlateLabel)
         containerView.addSubview(entryDateLabel)
-//        containerView.addSubview(exitImageView)
         contentView.addSubview(containerView)
     }
     
@@ -123,11 +102,6 @@ class VehicleCell: UITableViewCell {
         entryDateLabel.leadingAnchor.constraint(equalTo: self.containerView.leadingAnchor).isActive = true
         entryDateLabel.topAnchor.constraint(equalTo: self.numberPlateLabel.bottomAnchor).isActive = true
         
-//        // exit button
-//        exitImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
-//        exitImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
-//        exitImageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant:-20).isActive = true
-//        exitImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
     }
     
     private func formatDate (_ date: Date) -> String {
@@ -135,10 +109,5 @@ class VehicleCell: UITableViewCell {
         dateFormatter.dateFormat = "MMM d, h:mm a"
         return dateFormatter.string(from: date)
     }
-    
-//    @objc private func goToMainAndAllowExitVehicle(_ sender: Any) {
-//        guard let vehicle = vehicle else { return }
-//        delegate?.allowExitVehicle(vehicle)
-//    }
     
 }

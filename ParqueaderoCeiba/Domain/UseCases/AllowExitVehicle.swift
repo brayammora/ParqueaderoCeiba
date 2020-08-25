@@ -14,7 +14,6 @@ class AllowExitVehicle {
     let vehiclesRepository: VehiclesRepository
     
     // MARK: Messages
-    var vehicleExit = "The cost of parking is: "
 
     init(withRepository vehiclesRepository: VehiclesRepository) {
         self.vehiclesRepository = vehiclesRepository
@@ -23,7 +22,7 @@ class AllowExitVehicle {
     func execute(_ vehicle: Vehicle, completion: @escaping AllowExitVehicleCompletion) {
         
         let totalCharge = calculatePayment(vehicle)
-        vehicleExit.append(contentsOf: "\(totalCharge).")
+        let vehicleExit = "The cost of parking is: \(totalCharge)."
         let response = vehiclesRepository.removeVehicle(vehicle)
         if response {
             completion(.success(vehicleExit))

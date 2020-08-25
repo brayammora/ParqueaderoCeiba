@@ -84,7 +84,6 @@ extension MainParkViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: viewModel!.cellId) as! VehicleCell
         cell.vehicle = viewModel!.vechicles[indexPath.row]
-//        cell.delegate = self
         return cell
     }
     
@@ -126,9 +125,3 @@ extension MainParkViewController: MainParkViewModelDelegate {
         self.tableView.reloadData()
     }
 }
-
-//extension MainParkViewController: VehicleCellDelegate {
-//    func allowExitVehicle(_ vehicle: Vehicle) {
-//        viewModel?.allowExitVehicle(vehicle)
-//    }
-//}
