@@ -18,11 +18,18 @@ class GetAllParkedVehicles {
     }
     
     func execute(completion: @escaping GetAllParkedVehiclesCompletion) {
-        let vehicles = vehiclesRepository.getAllParkedVehicles()
-        if !vehicles.isEmpty {
-            completion(.success(vehicles))
-        } else {
-            completion(.failure(.noDataAvaliable))
+        vehiclesRepository.getAllParkedVehicles() { response in
+            switch response {
+            case .success(let result):
+                let vehicles = result as! [Vehicle]
+                if !vehicles.isEmpty {
+                    completion(.success(vehicles))
+                }
+                break
+            case .failure(_):
+                completion(.failure(.noDataAvaliable))
+                break
+            }
         }
     }
 }

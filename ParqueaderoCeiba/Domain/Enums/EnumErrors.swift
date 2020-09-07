@@ -49,3 +49,14 @@ enum AllowExitVehicleErrors: Error {
         }
     }
 }
+
+enum RepositoryErrors: Error {
+    case internalError
+    
+    var description: String {
+        switch self {
+        case .internalError:
+            return "There is a problem with the app, please try later."
+        }
+    }
+}

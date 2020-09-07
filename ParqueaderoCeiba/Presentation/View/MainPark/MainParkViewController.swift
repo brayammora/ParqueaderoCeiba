@@ -122,6 +122,8 @@ extension MainParkViewController: UITableViewDelegate {
 
 extension MainParkViewController: MainParkViewModelDelegate {
     func reloadTable() {
-        self.tableView.reloadData()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }

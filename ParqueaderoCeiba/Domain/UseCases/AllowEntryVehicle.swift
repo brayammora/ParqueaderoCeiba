@@ -34,13 +34,8 @@ class AllowEntryVehicle {
             completion(.failure(.canNotEnterToday))
             return
         }
-        
-        let response = vehiclesRepository.addVehicle(vehicle)
-        if response {
-            completion(.success(vehicleAdded))
-        } else {
-            completion(.failure(.vehicleCantAdded))
-        }
+        vehiclesRepository.addVehicle(vehicle)
+        completion(.success(vehicleAdded))
     }
     
     private func isAlreadyParked(_ numberPlate: String) -> Bool {

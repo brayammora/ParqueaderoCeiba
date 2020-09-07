@@ -9,36 +9,55 @@
 import Foundation
 import RealmSwift
 
-class VehiclesRepositoryImpl: VehiclesRepository {
-
-    var realm: Realm!
-        
-    init() {
-        do {
-            realm = try Realm()
-        } catch let error {
-            print("Realm error: \(error.localizedDescription)")
-        }
-    }
+struct VehiclesRepositoryImpl: VehiclesRepository {
     
-    func getAllParkedVehicles() -> [Vehicle] {
-        return MapperVehicleImpl.mapVehicleResultSetToArray(realm.objects(VehiclePersistent.self))
-    }
+    private let queue = DispatchQueue(label: "background", qos: .background)
     
-    func addVehicle(_ vehicle: Vehicle) -> Bool {
-        do {
-            try realm.write {
-                realm.add(MapperVehicleImpl.mapIntoVehiclePersistent(vehicle))
+    func getAllParkedVehicles(completion: @escaping RepositoryCompletion) {
+        queue.async {
+            autoreleasepool {
+                let realm = try! Realm()
+                let vehicles = MapperVehicleImpl.mapVehicleResultSetToArray(realm.objects(VehiclePersistent.self))
+                    completion(.success(vehicles))
             }
-        } catch let error {
-            print("Error insert Realm -> \(error.localizedDescription)")
-            return false
         }
-        
-        return true
+    }
+    
+    func addVehicle(_ vehicle: Vehicle) {
+        queue.async {
+            autoreleasepool {
+                do {
+                    let realm = try Realm()
+                    try realm.write {
+                        realm.add(MapperVehicleImpl.mapIntoVehiclePersistent(vehicle))
+                    }
+                } catch let error {
+                    print("Error insert Realm -> \(error.localizedDescription)")
+                }
+            }
+        }
+    }
+    
+    func removeVehicle(_ vehicle: Vehicle) {
+        queue.async {
+            autoreleasepool {
+                let realm = try! Realm()
+                let vehiclePersistent =  realm.objects(VehiclePersistent.self).filter("numberPlate == '\(vehicle.numberPlate)'")
+                if let vPersistent = vehiclePersistent.first {
+                    do {
+                        try realm.write {
+                            realm.delete(vPersistent)
+                        }
+                    } catch let error {
+                        print("Error delete Realm -> \(error.localizedDescription)")
+                    }
+                }
+            }
+        }
     }
     
     func findVehicle(_ numberPlate: String) -> Bool {
+        let realm = try! Realm()
         let vehiclePersistent = realm.objects(VehiclePersistent.self).filter("numberPlate == '\(numberPlate)'")
         if let _ = vehiclePersistent.first {
             return true
@@ -47,23 +66,9 @@ class VehiclesRepositoryImpl: VehiclesRepository {
     }
     
     func getCountByVehicleType(_ type: String) -> Int {
+        let realm = try! Realm()
         let vehicleType = realm.objects(VehiclePersistent.self).filter("type = '\(type)'")
         return vehicleType.count
-    }
-    
-    func removeVehicle(_ vehicle: Vehicle) -> Bool {
-        let vehiclePersistent = realm.objects(VehiclePersistent.self).filter("numberPlate == '\(vehicle.numberPlate)'")
-        if let vPersistent = vehiclePersistent.first {
-            do {
-                try realm.write {
-                    realm.delete(vPersistent)
-                }
-            } catch let error {
-                print("Error delete Realm -> \(error.localizedDescription)")
-                return false
-            }
-        }
-        return true
     }
     
 }

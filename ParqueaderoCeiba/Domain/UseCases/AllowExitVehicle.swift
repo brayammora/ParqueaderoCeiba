@@ -12,23 +12,16 @@ typealias AllowExitVehicleCompletion = ( (_ response: Result<Any, AllowExitVehic
 
 class AllowExitVehicle {
     let vehiclesRepository: VehiclesRepository
-    
-    // MARK: Messages
 
     init(withRepository vehiclesRepository: VehiclesRepository) {
         self.vehiclesRepository = vehiclesRepository
     }
     
     func execute(_ vehicle: Vehicle, completion: @escaping AllowExitVehicleCompletion) {
-        
         let totalCharge = calculatePayment(vehicle)
         let vehicleExit = "The cost of parking is: \(totalCharge)."
-        let response = vehiclesRepository.removeVehicle(vehicle)
-        if response {
-            completion(.success(vehicleExit))
-        } else {
-            completion(.failure(.vehicleCantExit))
-        }
+        vehiclesRepository.removeVehicle(vehicle)
+        completion(.success(vehicleExit))
     }
     
     private func calculatePayment(_ vehicle: Vehicle) -> Double {

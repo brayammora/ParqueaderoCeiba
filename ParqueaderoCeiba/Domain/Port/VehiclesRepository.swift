@@ -8,10 +8,12 @@
 
 import Foundation
 
+typealias RepositoryCompletion = ( (_ response: Result<Any, RepositoryErrors>) -> Void )
+
 protocol VehiclesRepository {
-    func getAllParkedVehicles() -> [Vehicle]
-    func addVehicle(_ vehicle: Vehicle) -> Bool
+    func getAllParkedVehicles(completion: @escaping RepositoryCompletion)
+    func addVehicle(_ vehicle: Vehicle)
     func findVehicle(_ numberPlate: String) -> Bool
     func getCountByVehicleType(_ type: String) -> Int
-    func removeVehicle(_ vehicle: Vehicle) -> Bool
+    func removeVehicle(_ vehicle: Vehicle)
 }

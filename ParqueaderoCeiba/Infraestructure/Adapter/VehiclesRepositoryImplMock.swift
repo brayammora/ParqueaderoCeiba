@@ -18,13 +18,12 @@ class VehiclesRepositoryImplMock: VehiclesRepository {
         ]
     }
     
-    func getAllParkedVehicles() -> [Vehicle] {
-        return vehicles
+    func getAllParkedVehicles(completion: @escaping RepositoryCompletion) {
+        completion(.success(vehicles))
     }
     
-    func addVehicle(_ vehicle: Vehicle) -> Bool {
+    func addVehicle(_ vehicle: Vehicle) {
         vehicles.append(vehicle)
-        return true
     }
     
     func findVehicle(_ numberPlate: String) -> Bool {
@@ -39,11 +38,10 @@ class VehiclesRepositoryImplMock: VehiclesRepository {
         return type == Constants.car ? Constants.carLimit : Constants.motorbikeLimit
     }
     
-    func removeVehicle(_ vehicle: Vehicle) -> Bool {
+    func removeVehicle(_ vehicle: Vehicle) {
         if let index = vehicles.firstIndex(where: { $0.numberPlate == vehicle.numberPlate }) {
             vehicles.remove(at: index)
         }
-        return true
     }
     
 }
