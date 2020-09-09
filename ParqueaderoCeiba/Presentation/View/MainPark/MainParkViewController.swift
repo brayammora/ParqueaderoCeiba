@@ -55,6 +55,7 @@ class MainParkViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(VehicleCell.self, forCellReuseIdentifier: viewModel!.cellId)
+        tableView.accessibilityIdentifier = "vehicleTableView"
     }
     
     private func setupConstraints() {

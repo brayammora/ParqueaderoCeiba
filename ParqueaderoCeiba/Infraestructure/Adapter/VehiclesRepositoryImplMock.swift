@@ -35,7 +35,9 @@ class VehiclesRepositoryImplMock: VehiclesRepository {
     }
     
     func getCountByVehicleType(_ type: String) -> Int {
-        return type == Constants.car ? Constants.carLimit : Constants.motorbikeLimit
+        // return type == Constants.car ? Constants.carLimit : Constants.motorbikeLimit
+        let vehiclePersistent = vehicles.filter{ $0.type == type }
+        return vehiclePersistent.count
     }
     
     func removeVehicle(_ vehicle: Vehicle) {

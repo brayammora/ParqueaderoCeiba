@@ -87,38 +87,45 @@ class ParqueaderoCeibaTests: XCTestCase {
         XCTAssertEqual(errorType, AllowEntryVehicleErrors.itsAlreadyParked)
     }
     
-    func testThereIsNoSiteAvaliableWithCarType() {
+    func testThereIsNoSiteAvaliableWithCarTypeFull() {
         // Arrange
-        vehicleDataBuilder.withType(Constants.car)
-        let vehicle: Vehicle = vehicleDataBuilder.build()
         var errorType: AllowEntryVehicleErrors!
         // Act
-        container.resolve(AllowEntryVehicle.self)?.execute(vehicle) { response in
-            switch response {
-            case .success(_):
-                break
-            case .failure(let error):
-                errorType = error
-                break
+        for n in 1...21 {
+            vehicleDataBuilder.withNumberPlate("QWE321\(n)")
+            vehicleDataBuilder.withType(Constants.car)
+            let vehicle: Vehicle = vehicleDataBuilder.build()
+            container.resolve(AllowEntryVehicle.self)?.execute(vehicle) { response in
+                switch response {
+                case .success(_):
+                    break
+                case .failure(let error):
+                    errorType = error
+                    break
+                }
             }
         }
+        
         // Assert
         XCTAssertEqual(errorType, AllowEntryVehicleErrors.parkIsFull)
     }
     
-    func testThereIsNoSiteAvaliableWithMotorbikeType() {
+    func testThereIsNoSiteAvaliableWithMotorbikeTypeFull() {
         // Arrange
-        vehicleDataBuilder.withType(Constants.motorbike)
-        let vehicle: Vehicle = vehicleDataBuilder.build()
         var errorType: AllowEntryVehicleErrors!
         // Act
-        container.resolve(AllowEntryVehicle.self)?.execute(vehicle) { response in
-            switch response {
-            case .success(_):
-                break
-            case .failure(let error):
-                errorType = error
-                break
+        for n in 1...11 {
+            vehicleDataBuilder.withNumberPlate("QWE321\(n)")
+            vehicleDataBuilder.withType(Constants.motorbike)
+            let vehicle: Vehicle = vehicleDataBuilder.build()
+            container.resolve(AllowEntryVehicle.self)?.execute(vehicle) { response in
+                switch response {
+                case .success(_):
+                    break
+                case .failure(let error):
+                    errorType = error
+                    break
+                }
             }
         }
         // Assert

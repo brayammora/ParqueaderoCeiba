@@ -26,6 +26,8 @@
 		BC186D8924EAEF6B00AC645D /* VehiclePersistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D8824EAEF6B00AC645D /* VehiclePersistent.swift */; };
 		BC186D8B24EAF04600AC645D /* MapperVehicleImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D8A24EAF04600AC645D /* MapperVehicleImpl.swift */; };
 		BC186D9524EC3E3C00AC645D /* VehicleDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC186D9424EC3E3C00AC645D /* VehicleDataBuilder.swift */; };
+		BC6B63FD2508192000825862 /* ExtensionsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6B63FC2508192000825862 /* ExtensionsHelpers.swift */; };
+		BC6FA8FB25080A64004E99BE /* AlertScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6FA8FA25080A64004E99BE /* AlertScreen.swift */; };
 		BC73A8D624EF795C004C2B20 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73A8D524EF795C004C2B20 /* Constants.swift */; };
 		BC73A8D824EF8773004C2B20 /* DateDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73A8D724EF8773004C2B20 /* DateDataBuilder.swift */; };
 		BC73A8DA24EF8D05004C2B20 /* AllowExitVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73A8D924EF8D05004C2B20 /* AllowExitVehicle.swift */; };
@@ -36,6 +38,8 @@
 		BC75CCF124F313D30036E314 /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCF024F313D30036E314 /* VehicleCell.swift */; };
 		BC75CCF324F320AA0036E314 /* ParkingVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCF224F320AA0036E314 /* ParkingVehicleViewController.swift */; };
 		BC75CCF724F321A10036E314 /* TableViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75CCF624F321A10036E314 /* TableViewHelpers.swift */; };
+		BC7D40212507F3E70088CF3A /* AddVehicleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D40202507F3E70088CF3A /* AddVehicleScreen.swift */; };
+		BC7D40232507F3FA0088CF3A /* MainParkScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7D40222507F3F90088CF3A /* MainParkScreen.swift */; };
 		BCCA0D4724F465E7005DD343 /* ParkingVehicle.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCA0D4624F465E7005DD343 /* ParkingVehicle.xib */; };
 		BCD2DE4324ED641C00E6349B /* EnumErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4224ED641C00E6349B /* EnumErrors.swift */; };
 		BCD2DE4524ED683F00E6349B /* AllowEntryVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD2DE4424ED683F00E6349B /* AllowEntryVehicle.swift */; };
@@ -90,6 +94,8 @@
 		BC186D8A24EAF04600AC645D /* MapperVehicleImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapperVehicleImpl.swift; sourceTree = "<group>"; };
 		BC186D9424EC3E3C00AC645D /* VehicleDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDataBuilder.swift; sourceTree = "<group>"; };
 		BC186D9824ECDD2400AC645D /* VehiclesRepositoryImplMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesRepositoryImplMock.swift; sourceTree = "<group>"; };
+		BC6B63FC2508192000825862 /* ExtensionsHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsHelpers.swift; sourceTree = "<group>"; };
+		BC6FA8FA25080A64004E99BE /* AlertScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertScreen.swift; sourceTree = "<group>"; };
 		BC73A8D524EF795C004C2B20 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC73A8D724EF8773004C2B20 /* DateDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDataBuilder.swift; sourceTree = "<group>"; };
 		BC73A8D924EF8D05004C2B20 /* AllowExitVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowExitVehicle.swift; sourceTree = "<group>"; };
@@ -100,6 +106,8 @@
 		BC75CCF024F313D30036E314 /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
 		BC75CCF224F320AA0036E314 /* ParkingVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingVehicleViewController.swift; sourceTree = "<group>"; };
 		BC75CCF624F321A10036E314 /* TableViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelpers.swift; sourceTree = "<group>"; };
+		BC7D40202507F3E70088CF3A /* AddVehicleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleScreen.swift; sourceTree = "<group>"; };
+		BC7D40222507F3F90088CF3A /* MainParkScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainParkScreen.swift; sourceTree = "<group>"; };
 		BCCA0D4624F465E7005DD343 /* ParkingVehicle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkingVehicle.xib; sourceTree = "<group>"; };
 		BCD2DE4224ED641C00E6349B /* EnumErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumErrors.swift; sourceTree = "<group>"; };
 		BCD2DE4424ED683F00E6349B /* AllowEntryVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowEntryVehicle.swift; sourceTree = "<group>"; };
@@ -197,7 +205,9 @@
 		BC11625B24DB95E50003A19E /* ParqueaderoCeibaUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BC6FA8FC25080A72004E99BE /* Screens */,
 				BC11625C24DB95E50003A19E /* ParqueaderoCeibaUITests.swift */,
+				BC6B63FC2508192000825862 /* ExtensionsHelpers.swift */,
 				BC11625E24DB95E50003A19E /* Info.plist */,
 			);
 			path = ParqueaderoCeibaUITests;
@@ -352,6 +362,16 @@
 				BC73A8D724EF8773004C2B20 /* DateDataBuilder.swift */,
 			);
 			path = DataBuilder;
+			sourceTree = "<group>";
+		};
+		BC6FA8FC25080A72004E99BE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BC7D40222507F3F90088CF3A /* MainParkScreen.swift */,
+				BC7D40202507F3E70088CF3A /* AddVehicleScreen.swift */,
+				BC6FA8FA25080A64004E99BE /* AlertScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		BC73A8D424EF794E004C2B20 /* Constants */ = {
@@ -691,7 +711,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6FA8FB25080A64004E99BE /* AlertScreen.swift in Sources */,
 				BC11625D24DB95E50003A19E /* ParqueaderoCeibaUITests.swift in Sources */,
+				BC7D40232507F3FA0088CF3A /* MainParkScreen.swift in Sources */,
+				BC7D40212507F3E70088CF3A /* AddVehicleScreen.swift in Sources */,
+				BC6B63FD2508192000825862 /* ExtensionsHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
